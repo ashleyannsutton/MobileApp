@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?73c27e26f610eb3c9f3feb0c75b03925";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<style>
+.link{
+  padding: 28px 0px;
+}
+.ui-navbar li .ui-btn {
+    font-size: 16px;
+    }
+.link2{
+      color: #608e1e;
+    font-weight: 600;
+    font-size: 11pt;
+    text-decoration: none;
+    }
+    .activity{
+    width: 65%;
+    border-radius: 50px;
+    height: 135px;
+    }
+</style>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="panel" id="myPanelDefault"> 
+    <center><h2>Recent Activities of Students</h2></center>
+    <center>
+    <img src="images/girl.jpg" class="activity">
+    <p><b>It's Time To Study.</b><br>
+    When you do exams you never want to be the one who finishes first and you never want to be the one who finishes last...</p></center>
+    <hr>
+    <center>
+    <img src="images/shopping.jpg" class="activity">
+    <p><b>It's Shopping Time</b><br>
+    When you do exams you never want to be the one who finishes first and you never want to be the one who finishes last. ...</p></center>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+  </div> 
+
+  <div data-role="panel" id="myPanelFixed" data-position-fixed="true"> 
+    <center><h2>Recent Activities of Students</h2></center>
+    <center>
+    <img src="images/blood.jpg" class="activity">
+    <p><b>It's Donation Time.</b><br>
+    When you do exams you never want to be the one who finishes first and you never want to be the one who finishes last. ...</p></center>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+  </div> 
+
+  <div data-role="header">
+      <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+      <h1>Welcome To My Homepage</h1>
+      <a href="#" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+
+       <div class="nav" data-role="navbar">
+        <ul>
+          <li><a href="#"><img src="RC_LogoHorz.png" style="width:100%;"></a></li>
+          <li><a href="#" class="link">Home</a></li>
+          <li><a href="#" class="link">Favorites</a></li>
+          <li><a href="#" class="link">Organizational Structure</a></li>
+          <li><a href="#" class="link">About</a></li>
+        </ul>
+      </div>
+  </div>
+ 
+
+
+
+
+  <div data-role="main" class="ui-content">
+    <a href="#myPanelDefault" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Default Panel</a>
+    <a href="#myPanelFixed" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel with data-position-fixed="true"</a>
+  </div>
+
+<div data-role="main" class="ui-content">
+    <div class="ui-grid-a ui-responsive">
+      <div class="ui-block-a">
+       <center><img src="images/Girl-Painting-Room-Green.jpg" style="width:80%; margin-top:15px;"></center>
+      </div>
+      <div class="ui-block-b" style="padding:0px 15px;">
+        <h2 style="color: #175ba2;">Add Your Favorite Item </h2>
+         <form method="post" action="">
+             <input type="text" name="Fname" placeholder="First Name">
+             <input type="text" name="Lname" placeholder="Last Name">
+             <input type="date" name="date" max="1979-12-31"><br>
+             <select name="hobby">
+              <option>Select Your Favorite Item</option>
+               <option>Reading Books</option>
+               <option>Drinking Coffee</option>
+               <option>Listining Music</option>
+             </select>
+             <select name="Time">
+               <option>2 Hours</option>
+               <option>3 Hours</option>
+               <option>4 Hours</option>
+             </select>
+             <input type="submit" value="Submit" name="submit" style="background-color:#0328f5;">
+         </form>
+         <span><b>Select You Favorite Hobby?</b></span>
+      </div>
+    </div>
+  </div>
+
+
+  <div data-role="main" class="ui-content">
+    <div class="ui-grid-solo">
+      <div class="ui-block-a">
+        <center><h1 style="margin-top: 0px; color: #175ba2;">Hobbies Are Very Important In Your Life</h1>
+        <p style="padding:0px 25px;">Your future doesn't have to wait—you can earn a degree that works for you and your budget. That's why we offer accelerated programs, employer alliances, seamless transfer policies and flexible learning options. With scholarships, grants and plenty of other ways to save, we focus on lowering your cost, so you can focus on graduation.</p></center>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div data-role="footer">
+    <div data-role="main" class="ui-content">
+    <div class="ui-grid-b ui-responsive">
+      <div class="ui-block-a">
+       <center><h3 style="color: #175ba2;">About Us</h3>
+          <p style="font-size: 10pt; padding: 0px 40px; text-align: justify;">
+                      Returning to college is a big life decision and with so much information out there, it can be hard to know where to start. Our guide helps you become a savvy shopper by focusing your search on what matters most to you.
+          </p>
+       </center>
+      </div>
+      <div class="ui-block-b">
+        <center><h3 style="color: #175ba2;" >About Us</h3></center>
+        <ul style="margin: 0px auto; width: 115px;">
+          <li><a href="Favorites.html" class="link2">Favorites</a></li>
+          <li><a href="Organization.html" class="link2">Organizational Structure</a></li>
+          <li><a href="About.html" class="link2">About</a></li>
+          <li><a href="Assignment1.html" class="link2">Assignment #1</a></li>
+        </ul>
+      </div>
+      <div class="ui-block-c">
+        <center><h3>Follow Us</h3>
+          <a href="#"><img src="viber.png" style="width:11%;"></a>
+          <a href="#"><img src="Instagram.png" style="width:10%;"></a>
+          <a href="#"><img src="facebook.png" style="width:10%;"></a>
+          <a href="#"><img src="twitter.png" style="width:10%;"></a>
+        </center>
+      </div>
+    </div>
+    </div> 
+
+</body>
+</html>
